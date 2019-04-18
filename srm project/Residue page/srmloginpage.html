@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="srmlogin.css";>
+ 	
+ 
+</head>
+
+<body ng-app="myPro" ng-controller="myCon">
+	<div class="container-fluid">
+		<div class="col-lg-12 col-md-12 col-xs-12">
+			<div class="header" style="padding: 0px;">
+			<div class="row" >
+				<div class="col-lg-1 col-md-1 col-sm-12 " align="center">
+				<a href="http://www.srmuniv.ac.in" target="_blank"><img style="width:120px;height:100px; " src="logo.png"></a>
+				</div>
+				<div class="col-lg-10 col-md-9 col-sm-12 "align="center" style="margin-right: 10px;margin-top: 25px;padding: 0px;overflow: hidden;">
+				<p>Academia : Student Portal </p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-12 col-md-12 col-xs-12">
+		<div style="margin-top:0px;text-align: center;">
+			<div align="center" id="formd" >
+				<form  class="form-style" name="myForm" >
+					<hr>
+					<div class="layout">
+						<h1 class="Log">Login</h1>
+						<hr>
+						<div class="form-group">
+						  <label for="email" style="font-style:Bookman;font-size: 20px;" class="formin1">Email Address:</label>
+							<input id="sizing" type="email" class="form-control" placeholder="Enter email" name="email" ng-model="email" required>
+							<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+								<span ng-show="myForm.email.$error.required">Email is required.</span>
+								<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+	    					</span>
+					    </div>
+							<div class="form-group" style="padding-top: 10px;margin-bottom: 10px;">
+								<label for="pwd1" class="formin2">Password:</label>
+									<input id="sizing" type="password" class="form-control" placeholder="Enter password" name="pwd1" ng-model=pwd1" required>
+							<span ng-show="signUp.pwd1.$touched"></span>
+						<div style="padding-left: 190px;padding-top: 5px;">
+							<a href="#"> Forgot Password?</a>
+						</div>
+						<div hover="color: #2ecc71;" style="padding-top: 30px;">
+							<button class="btn btn-success" type="button" style="width: 305px;" ><b style="color: white"><i>Signin</i></b></button><br>
+						</div>
+
+					</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+	
+		<hr>
+				<div class="col-lg-12 col-md-12 col-xs-12">
+					<div class="row" >
+						<div class="col-lg-1 col-md-1 col-sm-1 ">
+							<div class="dropdown" align="left">
+    							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">College
+    							<span class="caret"></span></button>
+   								<ul class="dropdown-menu">
+									<li><a style="color: black;" href="http://emanager.srmuniv.ac.in/elibrary/DigitalLibrary.jsps"target="_blank">D-space</a></li>
+									<li><a  href="http://empower.srmuniv.ac.in" target="_blank">Empower</a></li>
+									<li><a href="https://feekart.srmuniv.ac.in/srmopp/"target="_blank">Feekart </a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 " >
+    						<div class="dropdown" align="left">
+    							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Clubs
+    							<span class="caret"></span></button>
+   										<ul class="dropdown-menu">
+     									<li><a  href="https://nextech.io/home"target="_blank">NextTechLab</a></li>
+    									<li><a  href="https://webarchsrm.com/"  target="_blank">Webarch</a></li>
+    									<li><a  href="https://webarchsrm.com/"  target="_blank">Webarch</a></li>
+    									<li><a  href="http://www.teamsrmauv.com/" target="_blank">SrmAuv</a></li>
+    									<li><a  href="http://srmbyag.com/"target="_blank">SrmAg</a></b> </li>
+    									</ul>
+  	  						</div>
+  	  					</div>
+  	  					<div class="col-lg-10 col-md-11 col-sm-11 ">			
+							<img style="width: 120px; min-height: 100px;" align="right" src="444.png">
+							<p align="right" style="padding-top: 48px;margin-bottom: 0px;margin-top: 30px;"><b>Powered By:</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var app = angular.module('myPro', []);
+		app.controller('myCon', function($scope) {
+		$scope.email ="Yourname_parentname@srmuniv.edu.in";
+		});
+	</script>
+
+</body>
+</html>
