@@ -1,0 +1,22 @@
+{
+  "name": "Academia",
+  "version": "1.0.0",
+  "description": "This is a test directory to learn git and node",
+  "main": "loginpage2.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yashbindal652@github.com/yashbindal652/git.test.git"
+  },
+  "author": "Yash aggarwal",
+  "license": "ISC",
+  "homepage": "https://github.com/yashbindal652/git.test#readme",
+  "devDependencies": {
+    "http-proxy-middleware": "^0.19.1",
+    "lite-server": "^2.4.0"
+  }
+}
